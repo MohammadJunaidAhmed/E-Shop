@@ -14,4 +14,6 @@
     - npm start
 
 -> Thats it😁
+
+<img width="1680" alt="image" src="https://github.com/MohammadJunaidAhmed/E-Shop/assets/93183238/b97dae41-688e-4342-896e-92e1aad3c761">
       
