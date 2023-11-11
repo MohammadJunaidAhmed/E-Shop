@@ -1,16 +1,16 @@
 # E-Shop
 ## Open two terminals: 
 ### 1.Terminal -1:
-    - npm install
     - cd E-Shop/client/
+    - npm install
     - npm run dev
 ### 2. Terminal -2: 
-    - npm install
-    - create .env file and ADD these lines
-      - API_URL = /api/v1
-      - MONGO_CONNECTION_STRING = {Add the MongoCollection link}
-      - secret = {Note: Keep any random value Ex:sdfngf@g1742He}
     - cd E-Shop/server/
+    - npm install
+    - create .env file and ADD these lines in E-Shop/server/
+      - API_URL = /api/v1
+      - MONGO_CONNECTION_STRING = {Add your MongoCollection link}
+      - secret = {Note: Keep any random value Ex:sdfngf@g1742He}
     - npm start
 
 -> Thats it😁
