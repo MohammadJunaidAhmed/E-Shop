@@ -5,9 +5,9 @@ import Footer from "../Footer/Footer";
 
 const Layout = (props) => {
   return (
-    <div className='bg-body-tertiary min-h-screen h-fit'>
+    <div className='bg-body-tertiary'>
         <NavBar isLoggedIn={props.isLoggedIn} setIsLoggedIn={props.setIsLoggedIn}/>
-        <section className="bg-white pt-16">
+        <section className="min-h-screen h-fit bg-white">
             <Outlet />
         </section>
         <Footer/>

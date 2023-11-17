@@ -46,11 +46,11 @@ const Login = ({setIsLoggedIn}) => {
             const userId = data.userId;
             localStorage.setItem('jwtToken', token);
             localStorage.setItem('userId', userId);
+            navigate('/home');
             // console.log(localStorage.getItem('jwtToken'));
             // console.log(localStorage.getItem('userId'));
+            
             setIsLoggedIn(true); // Set the state to true
-            console.log("Logged In!");
-            navigate('/home'); //TODO: Un-comment this line;
           } else {
             // Handle authentication error, show a message to the user, etc.
             console.error('Authentication failed');

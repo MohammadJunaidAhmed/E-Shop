@@ -6,11 +6,8 @@ const ExampleCarouselImage = (props) => {
         backgroundImage: `url(${bgImg})`,
     };
   return (
-    <div className='w-full h-96 bg-gray-100 p-4 flex justify-center cursor-pointer'>
-      <div className='w-[90vw] sm:w-4/5 bg-no-repeat bg-cover flex flex-col justify-center items-center rounded-3xl hover:w-[93vw] ease-in-out duration-150 hover:opacity-95' style={{ ...divStyle}}>
-        <h1 className='text-white p-4 font-serif font-bold text-8xl italic text-opacity-100 hover:drop-shadow-md'>{props.name}</h1>
-        {/* <h1>{props.desc}</h1> */}
-      </div>
+    <div className='w-full h-96 bg-gray-100 mt-24 flex justify-center'>
+      <div className='w-full sm:w-4/5' style={divStyle}></div>
     </div>
   )
 }
