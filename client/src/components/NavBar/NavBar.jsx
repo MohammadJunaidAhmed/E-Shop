@@ -53,9 +53,12 @@ const NavBar = (props) => {
                         {
                             isLoggedIn ?  (
                                 <NavDropdown title="Account">
-                                    <NavDropdown.Item>Profile</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/profile">Profile</NavDropdown.Item>
                                     <NavDropdown.Item onClick={()=>{
+                                            console.log("Logged out!")
+                                            console.log(props.isLoggedIn)
                                             props.setIsLoggedIn(false);
+                                            console.log(props.isLoggedIn)
                                             localStorage.removeItem('jwtToken');
                                             localStorage.removeItem('userId');
                                             navigate('/home');

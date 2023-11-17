@@ -91,7 +91,7 @@ const ProductCard = (props) => {
     navigate('/cart');
   }
   return (
-    <div className="p-4">
+    <div className="p-4 w-96">
       <div className="border rounded-lg p-4">
         <img
           src={props.product.image}
@@ -105,11 +105,11 @@ const ProductCard = (props) => {
         </div>
         {
           !isPresent ? (
-            <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full hover:bg-blue-600" onClick={ isLoading ? () => {} : addToCart}>
+            <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full hover:bg-blue-600 cursor-pointer" onClick={ isLoading ? () => {} : addToCart}>
               Add to Cart
             </button>
           ) : (
-            <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full hover:bg-blue-600 " onClick={goToCart}>
+            <button className="bg-blue-500 text-white px-4 py-2 mt-2 rounded-full hover:bg-blue-600 hover:cursor-pointer" onClick={goToCart}>
               Go to Cart
             </button>
           )

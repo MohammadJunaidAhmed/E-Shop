@@ -50,7 +50,7 @@ mongoose.connect(process.env.MONGO_CONNECTION_STRING, {
 .then(()=>{
     console.log('Database Connection is ready...')
     //Server
-    app.listen(3000, ()=>{
+    app.listen(3000,'0.0.0.0', ()=>{
     
         console.log('server is running http://localhost:3000');
     })

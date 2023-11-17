@@ -16,8 +16,8 @@ const Products = () => {
       .catch(error => console.error(error));
   }, []);
   return (
-    <div className="w-screen h-screen">
-        <div className='w-full h-full bg-green-100 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-16'>
+    <div className="w-screen h-fit">
+        <div className='w-full h-full bg-green-100 grid grid-cols-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-2 gap-4 pt-16'>
         {products.map((product) => {
           // console.log(product)
           return (

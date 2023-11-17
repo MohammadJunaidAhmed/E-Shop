@@ -12,16 +12,16 @@ const Hero = () => {
   }, []);
   return (
     <div className='w-screen h-fit'>
-      <Carousel>
+      <Carousel pause='hover'>
       {
         featured.map((feat)=>{
           return (
-            <Carousel.Item key={feat._id}>
-              <ExampleCarouselImage text="First slide" image={feat.image}/>
-              <Carousel.Caption>
-                <h3>{feat.name}</h3>
+            <Carousel.Item key={feat._id} >
+              <ExampleCarouselImage text="First slide" image={feat.image} name={feat.name} desc = {feat.richDescription}/>
+              {/* <Carousel.Caption className='flex flex-col justify-between'>
+                <h3 className='font-bold text-3xl text-zinc-200 font-serif shadow-inner saturate-150'>{feat.name}</h3>
                 <p>{feat.richDescription}</p>
-              </Carousel.Caption>
+              </Carousel.Caption> */}
             </Carousel.Item>
           );
         })
